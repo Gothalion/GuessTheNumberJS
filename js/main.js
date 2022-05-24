@@ -26,7 +26,7 @@
 
 const isNumber = function (value) {
   return !isNaN(parseFloat(value) && isFinite(value));
-};
+}; // Проверка на число
 
 const getNumber = function () {
   let n = Math.floor(Math.random() * 100 + 1);
@@ -38,7 +38,7 @@ const getNumber = function () {
     );
     i--;
 
-    if (i <= 0) {
+    if (i === 0) {
       let end = confirm('Попытки закончились. Хотите сыграть еще?');
       if (end) {
         getNumber();
